@@ -140,5 +140,6 @@ $RECYCLE.BIN/
 # End of https://www.gitignore.io/api/java,windows,eclipse,java-web,visualstudiocode
 apache-maven-3.6.3/
 apache-tomcat-8.5.50/
-Servers/
+workspace/Servers/.settings
+workspace/Servers/Pivotal tc Server Developer Edition v4.0-config
 sts-bundle/
