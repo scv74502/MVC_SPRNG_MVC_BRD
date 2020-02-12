@@ -31,6 +31,11 @@
 
 #### 2020.02.11
 - 16번 트랜잭션까지 설정 완료(pom.xml에 aspectJ runtime과 weaver 추가해야 정상 동작함)
+  insertFail 추가하고 컨트롤러 등 자바 파일 수정함
+
+#### 2020.02.12
+- 17번까지 진행함, java 파일들 수정하고 CommonDto, CommonForm, PagingUtil, ResultUtil, BoardService 자바 파일들 추가함
+- 에러는 aspectj pom.xml에 dependency 추가해서 해결했고, 리스트에서 글 하나 잘리는 오류와 리스트 버튼 색깔 변경 방법 찾아보기
 
 #### 찾아보기
 - Spring
@@ -61,3 +66,5 @@
 - preparedStatement 찾아보기
 - httpsrequest 찾아보기
 - ajax, json
+- 에러는 aspectj pom.xml에 dependency 추가해서 해결했고, 리스트에서 글 하나 잘리는 오류와 리스트 버튼 색깔 변경 방법 찾아보기
+- html 태그 복습하고 스프링 구조, 게시판의 리스팅 로직 더 학습하기

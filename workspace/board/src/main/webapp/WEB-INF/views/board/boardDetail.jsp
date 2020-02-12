@@ -97,7 +97,7 @@
 			str += "</tr>";		
 			str += "<tr>";
 			str += "<th>내용</th>";
-			str += "<td colspan='3'>"+ boardContent+"</td>";
+			str += "<td colspan='3'>"+ boardSubject +"</td>";
 			str += "</tr>";
 			
 		} else {

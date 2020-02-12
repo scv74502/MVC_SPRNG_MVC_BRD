@@ -1,14 +1,14 @@
 /* common */
-body,td,th{font-family:'ë§‘ì€ ê³ ë”•', 'malgun', Dotum, sans-serif;font-size:12px;color:#666;letter-spacing:0px}
+body,td,th{font-family:'¸¼Àº °íµñ', 'malgun', Dotum, sans-serif;font-size:12px;color:#666;letter-spacing:0px}
 
-input, button{font-family:'ë§‘ì€ ê³ ë”•', 'malgun', Dotum, sans-serif;font-size:12px;overflow:visible}
-input[type="radio"]{*width:13px;*height:13px;font-family:'ë§‘ì€ ê³ ë”•', 'malgun', Dotum, sans-serif;vertical-align:middle}
-input[type="checkbox"]{*width:13px;*height:13px;font-family:'ë§‘ì€ ê³ ë”•', 'malgun', Dotum, sans-serif;vertical-align:middle}
-input[type="text"]{font-family:'ë§‘ì€ ê³ ë”•', 'malgun', Dotum, sans-serif;font-size:12px;color:#666;padding-left:3px;border:1px solid #ABADB3}
-input[type="password"]{font-family:'ë§‘ì€ ê³ ë”•', 'malgun', Dotum, sans-serif;font-size:12px;color:#666;padding-left:3px;border:1px solid #cdcdcd}
-input[type="file"]{font-family:'ë§‘ì€ ê³ ë”•', 'malgun', Dotum, sans-serif;font-size:12px;height:22px;color:#666;background:#fff;border:1px solid #cdcdcd}
-select{font-family:'ë§‘ì€ ê³ ë”•', 'malgun', Dotum, sans-serif;font-size:12px;color:#666;vertical-align:middle;border:none}
-textarea{font-family:'ë§‘ì€ ê³ ë”•', 'malgun', Dotum, sans-serif;font-size:12px;color:#666;padding:5px;vertical-align:middle;border:1px solid #cdcdcd}
+input, button{font-family:'¸¼Àº °íµñ', 'malgun', Dotum, sans-serif;font-size:12px;overflow:visible}
+input[type="radio"]{*width:13px;*height:13px;font-family:'¸¼Àº °íµñ', 'malgun', Dotum, sans-serif;vertical-align:middle}
+input[type="checkbox"]{*width:13px;*height:13px;font-family:'¸¼Àº °íµñ', 'malgun', Dotum, sans-serif;vertical-align:middle}
+input[type="text"]{font-family:'¸¼Àº °íµñ', 'malgun', Dotum, sans-serif;font-size:12px;color:#666;padding-left:3px;border:1px solid #ABADB3}
+input[type="password"]{font-family:'¸¼Àº °íµñ', 'malgun', Dotum, sans-serif;font-size:12px;color:#666;padding-left:3px;border:1px solid #cdcdcd}
+input[type="file"]{font-family:'¸¼Àº °íµñ', 'malgun', Dotum, sans-serif;font-size:12px;height:22px;color:#666;background:#fff;border:1px solid #cdcdcd}
+select{font-family:'¸¼Àº °íµñ', 'malgun', Dotum, sans-serif;font-size:12px;color:#666;vertical-align:middle;border:none}
+textarea{font-family:'¸¼Àº °íµñ', 'malgun', Dotum, sans-serif;font-size:12px;color:#666;padding:5px;vertical-align:middle;border:1px solid #cdcdcd}
 em, address{font-style:normal}
 
 /* layout */
