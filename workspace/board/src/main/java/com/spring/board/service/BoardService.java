@@ -16,6 +16,7 @@ import com.spring.board.dao.BoardDao;
 import com.spring.board.dto.BoardDto;
 import com.spring.board.dto.CommonDto;
 import com.spring.board.form.BoardForm;
+import com.spring.board.form.BoardFileForm;
 import com.spring.board.form.CommonForm;
 
 @Service
@@ -105,6 +106,57 @@ public class BoardService {
 		}
 
 		return boardDto;
+	} 
+	
+	/** 게시판 - 첨부파일 정보 조회 */
+	public List<BoardFileForm> getBoardFileInfo(BoardForm boardForm) throws Exception{
+		
+		List<MultipartFile> files = boardForm.getFiles();
+		
+		List<BoardFileForm> boardFileList = new ArrayList<BoardFileForm>();
+		
+		BoardFileForm boardFileForm = new BoardFileForm();
+		
+		int boardSeq = boardForm.getBoard_seq();
+		String fileName = null;
+		String fileExt = null;
+		String fileNameKey = null;
+		String fileSize = null;
+		// Setting PATH for files
+		String filePath = "C:/board/file";
+		
+		if (files != null && files.size() > 0) {
+			
+			File file = new File(filePath);
+			
+			// make directory if not exists
+			if (file.exists() == false) {	// return boolean value
+				file.mkdir();
+			}
+			for(MultipartFile multipartFile : files) {
+				
+				fileName = multipartFile.getOriginalFilename();
+				fileExt = fileName.substring(fileName.lastIndexOf("."));
+				// change file name(encrypted by uuid) + extension
+				fileNameKey = getRandomString() + fileExt;
+				fileSize = String.valueOf(multipartFile.getSize());
+				
+				// 설정한 Path에 파일 저장
+				file = new File(filePath + "/" + fileNameKey);
+				
+				multipartFile.transferTo(file);
+				
+				boardFileForm = new BoardFileForm();
+				boardFileForm.setBoard_seq(boardSeq);
+				boardFileForm.setFile_name(fileName);
+				boardFileForm.setFile_name_key(fileNameKey);
+				boardFileForm.setFile_path(filePath);
+				boardFileForm.setFile_size(fileSize);
+				boardFileList.add(boardFileForm);
+			}
+		}
+		
+		return boardFileList;
 	}
 
 	/** 게시판 - 삭제 */
@@ -164,5 +216,11 @@ public class BoardService {
 		}
 
 		return boardDto;
+	}
+	
+	/** generate 32 random String(include number) */
+	public static String getRandomString() {
+		
+		return UUID.randomUUID().toString().replaceAll("-", "");
 	}
 }

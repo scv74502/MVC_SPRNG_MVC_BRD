@@ -12,10 +12,6 @@
 <script type="text/javascript" src="/js/common/jquery.js"></script>
 <script type="text/javascript" src="/js/common/jquery.form.js"></script>
 <script type="text/javascript">
-	
-	$(document).ready(function(){		
-		
-	});
 		
 	/** 게시판 - 목록 페이지 이동 */
 	function goBoardList(){				
@@ -43,12 +39,12 @@
 		var yn = confirm("게시글을 등록하시겠습니까?");		
 		if(yn){
 			
-			var filesChk = ${"input[name='files[0]']"}.val();
+			var filesChk = $("input[name='files[0]']").val();
 			if(filesChk == ""){
 				$("input[name='files[0]']").remove();
 			}
 				
-			$.("#boardForm").ajaxForm({	
+			$("#boardForm").ajaxForm({	
 				
 			    url		: "/board/insertBoard",
 			    enctype	: "multipart/form-data",
